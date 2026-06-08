@@ -1,548 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Integrative psychotherapy and counselling by Nirupama Inchalmath. BACP registered member offering online therapy in English, Hindi and Kannada.">
+  <title>Therapy By Inchalmath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Sora:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/premium.css">
+</head>
+<body>
 
-  <head>
+  <!-- Fixed video background -->
+  <div id="video-bg">
+    <video autoplay muted loop playsinline id="bg-video" preload="none" poster="images/video-poster.jpg">
+      <source src="images/video-bg1.webm" type="video/webm">
+      <source src="images/video-bg1.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+  </div>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Site header -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand">
+        <img src="images/logo3.png" alt="" class="brand-logo">
+        <span class="brand-text">Psychotherapy<br>&amp; Counselling</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav">
+        <ul>
+          <li><a href="#hero"         class="nav-link active">Home</a></li>
+          <li><a href="#about"        class="nav-link">About</a></li>
+          <li><a href="#philosophy"   class="nav-link">Philosophy</a></li>
+          <li><a href="#services"     class="nav-link">Services</a></li>
+          <li><a href="#experience"   class="nav-link">Experience</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact"      class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <title>Therapy By Inchalmath</title>
-<!--
-Elegance Template
-https://templatemo.com/tm-528-elegance
--->
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+    <button class="nav-overlay-close" aria-label="Close navigation">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <nav aria-label="Mobile navigation">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <main id="site-main">
 
-    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
-
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-
-    <link rel="stylesheet" href="css/animate.css">
-
-    <link rel="stylesheet" href="css/templatemo-style.css">
-
-    <link rel="stylesheet" href="css/responsive.css">
-
-    </head>
-    
-    <body>
-    
-    <div id="video">
-        <div class="preloader">
-            <div class="preloader-bounce">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <!-- ── HERO ── -->
+    <section id="hero" data-section="hero">
+      <div class="hero-inner">
+        <img src="images/logo3.png" alt="Therapy By Inchalmath" class="hero-logo reveal-hero">
+        <p class="hero-eyebrow reveal-hero" style="--d:.10s">Welcome to</p>
+        <h1 class="hero-title reveal-hero" style="--d:.12s">
+          Therapy<br><em>By Inchalmath</em>
+        </h1>
+        <p class="hero-tagline reveal-hero" style="--d:.26s">
+          A safe and supportive space for healing, growth, and self-discovery.
+        </p>
+        <blockquote class="hero-quote reveal-hero" style="--d:.40s">
+          <p>"Psychotherapy isn't a twentieth-century artifice imposed on nature, but the reinstatement of a natural healing process."</p>
+          <cite>&#8202;&#8212; Patricia Love</cite>
+        </blockquote>
+        <a href="#about" class="hero-cta reveal-hero" style="--d:.54s">Begin the journey</a>
+        <div class="hero-scroll reveal-hero" style="--d:.68s" aria-hidden="true">
+          <span class="scroll-line"></span>
         </div>
+      </div>
+    </section>
 
-        <header id="header">
-            <div class="container-fluid">
-                <div class="navbar">
-                    <div class="logo-container">
-                        <image src="images/logo3.png" alt="Therapy By Inchalmath" class="navbar-logo"></image>
-                        <a href="#" id="logo" title="Therapy By Inchalmath" class="navbar-text">
-                            Psychotherapy & Counselling
-                        </a>
-                    </div>
-                    <div class="navigation-row">
-                        <nav id="navigation">
-                            <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
-                            <div class="nav-box navbar-collapse">
-                                <ul class="navigation-menu nav navbar-nav navbars" id="nav">
-                                    <li data-menuanchor="slide01" class="active"><a href="#slide01">Home</a></li>
-                                    <li data-menuanchor="slide02"><a href="#slide02">About Me</a></li>
-                                    <li data-menuanchor="slide03"><a href="#slide03">Philosophy</a></li>
-                                    <li data-menuanchor="slide04"><a href="#slide04">Services</a></li>
-                                    <li data-menuanchor="slide05"><a href="#slide05">My Work</a></li>
-                                    <li data-menuanchor="slide06"><a href="#slide06">Testimonials</a></li>
-                                    <li data-menuanchor="slide07"><a href="#slide07">Contact Me</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
+    <!-- ── ABOUT ── -->
+    <section id="about" data-section="about">
+      <div class="panel">
+        <div class="about-grid">
+          <aside class="about-aside">
+            <figure class="portrait-fig reveal">
+              <img src="images/me.png" alt="Nirupama Inchalmath, Integrative Psychotherapist">
+            </figure>
+            <ul class="credential-pills reveal">
+              <li>CBT &middot; Attachment Theory</li>
+              <li>Person-Centred Approach</li>
+              <li>ACT &middot; CFT &middot; DBT</li>
+              <li>English &middot; Hindi &middot; Kannada</li>
+            </ul>
+            <div class="bacp-accred reveal">
+              <img src="images/bacp.png" alt="BACP Registered Member">
+              <span>BACP Registered Member</span>
             </div>
+          </aside>
+          <div class="about-copy">
+            <header class="section-header reveal">
+              <p class="section-label">About me</p>
+              <h2>Discover Healing<br>Through Psychotherapy</h2>
+            </header>
+            <p class="reveal">At Nirupama Inchalmath Psychotherapy, I believe in the profound capacity of therapy to impact lives. My practice offers a safe, supportive environment where individuals can explore their thoughts, feelings, and experiences with complete openness.</p>
+            <p class="reveal">I am a qualified Integrative Counsellor and Psychotherapist, and a registered member of the British Association for Counselling and Psychotherapy (BACP), adhering to its ethical framework. I offer an integrative approach drawing on Cognitive Behavioural Therapy, Attachment Theory, and Person-Centred Approach, as well as ACT, Compassion Focussed Therapy, and DBT.</p>
+            <p class="reveal">I perceive therapy as a collaborative journey navigating the depths of human experience with both care and clinical rigour. I embrace an ecological, biopsychosocial standpoint and have worked with people from the East to the West, across varied cultural backgrounds, all genders, sexualities, and age groups. I offer therapy in Hindi and Kannada within the UK.</p>
+            <div class="areas-block reveal">
+              <p class="areas-label">Areas of support</p>
+              <ul class="areas-list">
+                <li>Mental Health Concerns</li>
+                <li>Relationship Issues</li>
+                <li>Life Transitions</li>
+                <li>Self-Exploration</li>
+                <li>Behavioural Change</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PHILOSOPHY ── -->
+    <section id="philosophy" data-section="philosophy">
+      <div class="panel">
+        <header class="section-header centered reveal">
+          <p class="section-label">My approach</p>
+          <h2>Philosophy</h2>
+          <p class="section-intro">My approach is rooted in deep respect for the unique journey of each individual. No two people are alike &#8212; so every therapeutic relationship is tailored to the specific needs and goals of the person in front of me.</p>
         </header>
-
-        <video autoplay muted loop id="myVideo">
-          <source src="images/video-bg1.mp4" type="video/mp4">
-        </video>
-
-        <img src="images/bacp.png" alt="BACP Accredition" class="sticky-image">
-
-        <div id="fullpage" class="fullpage-default">
-
-            <div class="section animated-row" data-section="slide01">
-                <div class="section-inner">
-                    <div class="welcome-box">
-                        <!--"The wound is the place where the light enters you." - Rumi <br> -->
-                        <span class="welcome-first animate" data-animate="fadeInUp"><strong>Welcome to</strong></span>
-                        <image src="images/logo3.png" alt="Therapy By Inchalmath" style="width: 25%; height: 25%; opacity: 1;"></image>
-                        <h4 class="animate" data-animate="fadeInUp">Creating a Safe Haven for Healing and Growth</h4>
-                        <p class="animate" data-animate="fadeInUp"> <em>“Psychotherapy isn’t a twentieth-century artifice imposed on nature, but the reinstatement of a natural healing process.” - Patricia Love</em></p>
-                        <div class="scroll-down next-section animate data-animate="fadeInUp""><img src="images/mouse-scroll.png" alt=""><span>Scroll Down</span></div>
-                    </div>
-                </div>
+        <ol class="principles">
+          <li class="principle reveal">
+            <span class="principle-n">01</span>
+            <div class="principle-body">
+              <h3>What is Psychotherapy?</h3>
+              <p>A collaborative process between therapist and client &#8212; a confidential space to openly discuss concerns, challenges, and goals. Through dialogue and exploration, psychotherapy promotes self-awareness, emotional healing, and personal growth.</p>
             </div>
-
-            <div class="section animated-row" data-section="slide02">
-                <div class="section-inner">
-                    <div class="about-section">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 wide-col-laptop">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="about-contentbox">
-                                            <div class="about-background animate" data-animate="fadeInUp">
-                                                <h6>Discover Healing Through Psychotherapy</h6>
-                                                <p>At Nirupama Inchalmath Psychotherapy, I believe in the ability of psychotherapy to profoundly impact lives.
-                                                    As an experienced and compassionate therapist, my practice offers a safe and supportive environment for
-                                                    individuals to explore their thoughts, feelings, and experiences.</p>
-                                              
-                                                <h6>About Me</h6>
-                                                <p>I am a qualified Integrative Counsellor and Psychotherapist and a registered member of the British Association
-                                                  for Counselling and Psychotherapy (BACP) adhering to its ethical framework. I am committed to providing a safe,
-                                                  non-judgmental and collaborative space for clients from diverse backgrounds. I offer my service with an integrative
-                                                  approach including Cognitive Behavioural Therapy, Attachment Theory and Person Centred Approach. Although I have been
-                                                  trained in 3 modalities predominantly, I incorporate skills/aspects from other modalities and apply them in my practice
-                                                  such as Acceptance and Commitment Therapy, Compassion Focussed Therapy and Dialectical Behavioural Therapy.
-                                                  <br><br>
-                                                  I perceive psychotherapy and counselling as a collaborative journey undertaken by both the client and the therapist, navigating
-                                                  through the depths of human experiences including their traumas. My main focus in research and psychotherapy lies in adopting a
-                                                  qualitative and quantitative perspective, considering the biopsychosocial aspects and embracing an ecological standpoint. I have
-                                                  worked with people from the East to the West from varied cultural backgrounds. My experience covers offering therapy to clients
-                                                  from diverse ethnic and religious backgrounds, all genders, sexualities, and age groups; besides delivering therapy in Hindi
-                                                  language in the UK since I am multilingual.</p>
-                                            </div>
-                                            <div class="facts-list owl-carousel">
-                                                <div class="item animate" data-animate="fadeInUp">
-                                                    <div class="counter-box">
-                                                        Mental Health Concerns
-                                                    </div>
-                                                </div>
-                                                <div class="item animate" data-animate="fadeInUp">
-                                                    <div class="counter-box">
-                                                        Relationship Issues
-                                                    </div>
-                                                </div>
-                                                <div class="item animate" data-animate="fadeInUp">
-                                                    <div class="counter-box">
-                                                        Life Transitions
-                                                    </div>
-                                                </div>
-                                                <div class="item animate" data-animate="fadeInUp">
-                                                    <div class="counter-box">
-                                                        Self-Exploration
-                                                    </div>
-                                                </div>
-                                                <div class="item animate" data-animate="fadeInUp">
-                                                    <div class="counter-box">
-                                                        Behavioral Changes
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <figure class="about-img animate" data-animate="fadeInUp"><img src="images/me.png" class="rounded" alt=""></figure>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </li>
+          <li class="principle reveal">
+            <span class="principle-n">02</span>
+            <div class="principle-body">
+              <h3>Holistic Healing</h3>
+              <p>I believe in addressing the interconnectedness of mind, body, and environment. Taking a holistic approach means considering every dimension of your well-being to promote comprehensive healing &#8212; not merely symptom relief.</p>
             </div>
-
-            <div class="section animated-row" data-section="slide03">
-                <div class="section-inner">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 wide-col-laptop">
-                            <div class="title-block animate" data-animate="fadeInUp">
-                                <span><i class="fa-solid fa-circle-info"></i></span>
-                                <h2>What Is It ?</h2>
-                            </div>
-                            <div class="services-section">
-                                <div class="services-list owl-carousel">
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
-                                            <h3>What is Psychotherapy ?</h3>
-                                            <p>Psychotherapy, also known as talk therapy or counselling, is a collaborative process between a therapist and a client.
-                                                It provides a confidential space where individuals can openly discuss their concerns, challenges, and goals.
-                                                Through dialogue and exploration, psychotherapy aims to promote self-awareness, emotional healing, and personal growth.</p>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-cloud" aria-hidden="true"></i></span>
-                                            <h3>Begin Your Journey Towards Healing</h3>
-                                            <p>Whether you're struggling with anxiety, navigating a difficult life transition, or simply seeking personal growth,
-                                                we're here to support you every step of the way. Take the first step towards positive change by scheduling a consultation with me.
-                                                Together, we'll work towards unlocking your full potential and creating a life filled with meaning, fulfilment, and resilience. </p>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-desktop" aria-hidden="true"></i></span>
-                                            <h3>Philosophy</h3>
-                                            <p>At Nirupama Inchalmath Psychotherapy, my approach to psychotherapy is rooted in a deep respect for the unique journey of each individual.
-                                                I understand that no two people are alike, and as such, I tailor the therapeutic approach to meet the specific needs and goals
-                                                of my clients. My philosophy is guided by several core principles</p>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
-                                            <h3>Holistic Healing</h3>
-                                            <p>I believe in addressing the interconnectedness of mind, body and environment in the healing process.
-                                                As a therapist I take a holistic approach, considering the various dimensions of your well-being to promote comprehensive
-                                                healing and growth.</p>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
-                                            <h3>Collaborative Partnership</h3>
-                                            <p>Therapy is a collaborative process between therapist and client. I value your expertise in your own life
-                                                and encourage open dialogue, mutual respect, and shared decision-making throughout the therapeutic journey.</p>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-database" aria-hidden="true"></i></span>
-                                            <h3>Strengths-Based Perspective</h3>
-                                            <p>I recognize that each individual possesses unique strengths, resources, and resilience.
-                                                As a therapist, I strive to empower clients by identifying and leveraging their inherent strengths to overcome
-                                                challenges and achieve their goals.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
-                                            <h3>Culturally-Informed Practice</h3>
-                                            <p>I am committed to providing culturally competent and inclusive care. I honour the diverse backgrounds, identities,
-                                                and experiences of my clients and strive to create a safe and affirming space for all individuals, regardless of race,
-                                                ethnicity, gender identity, sexual orientation, or religious beliefs. Equality, Diversity and Inclusion (EDI) is at the 
-                                                heart of my practice whilst being considerate of the Equality Act 2010.</p>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-camera" aria-hidden="true"></i></span>
-                                            <h3>Evidence-Based Interventions</h3>
-                                            <p>I integrate evidence-based practices and therapeutic techniques supported by research and clinical expertise.
-                                                I continuously stay informed about the latest advancements in the field of psychology and psychotherapy to ensure
-                                                the highest quality of care for our clients. I am committed to continuous professional development (CPD). </p>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-camera" aria-hidden="true"></i></span>
-                                            <h3>Long-Term Growth and Resilience</h3>
-                                            <p>The goal is not only to alleviate symptoms but also to foster long-term growth, resilience,
-                                                and well-being. I work with clients to develop sustainable coping strategies, enhance self-awareness,
-                                                and cultivate the skills needed to navigate life's challenges with confidence and resilience. </p>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-camera" aria-hidden="true"></i></span>
-                                            <h3>Compassionate Support</h3>
-                                            <p>Above all, we provide a compassionate and nonjudgmental space where clients feel heard, understood,
-                                                and accepted. Our therapists offer genuine empathy, support, and encouragement as clients explore their
-                                                thoughts, feelings, and experiences in a safe and nurturing environment. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </li>
+          <li class="principle reveal">
+            <span class="principle-n">03</span>
+            <div class="principle-body">
+              <h3>Collaborative Partnership</h3>
+              <p>You are the expert on your own life. I value open dialogue, mutual respect, and shared decision-making. Therapy works best when your self-knowledge meets my clinical expertise in equal measure.</p>
             </div>
-
-            <div class="section animated-row" data-section="slide04">
-                <div class="section-inner">
-                    <div class="row justify-content-center">
-                        <div class="col-md-7 wide-col-laptop">
-                            <div class="title-block animate" data-animate="fadeInUp">
-                                <span><i class="fa-regular fa-clipboard"></i></span>
-                                <h2>Services</h2>
-                            </div>
-                            <div class="skills-row animate" data-animate="fadeInDown">
-                                <div class="row">
-                                    <div class="col-md-8 offset-md-2">   
-                                        <div class="skill-item">
-                                            <h6>Individual online therapy (Google Meet/zoom) of 50 minutes/session.<br>
-                                                The number of sessions depends on the client’s unique needs.
-                                                </h6>
-                                            <div class="skill-bar">
-        
-                                                <div class="filled-bar"></div>
-                                            </div>          
-                                        </div>
-                                        <div class="skill-item">
-                                            <h6>Therapy in 3 languages including English, Hindi and Kannada.</h6>
-                                        </div>
-                                        <div class="skill-item">
-                                            <h6>Free consultation session of 30 mins. </h6>
-                                            <div class="skill-bar">
-        
-                                                <div class="filled-bar"></div>
-                                            </div>        
-                                        </div>
-                                        <div class="skill-item last-skill">
-                                            <h6><strong>Fee</strong><br><br>
-                                            <p>International clients: Individuals - <i class="fas fa-sterling-sign"></i> 40 and students <i class="fas fa-sterling-sign"></i> 30.</p>
-                                            <p>Clients within India: Individuals - <i class="fa-solid fa-indian-rupee-sign"></i> 2000 and
-                                                students <i class="fa-solid fa-indian-rupee-sign"></i> 1500</p>
-                                            <p><em>Payment should be settled on the same day (before or after the session), using a bank transfer.
-                                                Sliding scale pricing is offered on request.</em></p></h6>
-                                                                                        <div class="skill-bar">
-        
-                                                <div class="filled-bar"></div>
-                                            </div>      
-                                        </div>                   
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </li>
+          <li class="principle reveal">
+            <span class="principle-n">04</span>
+            <div class="principle-body">
+              <h3>Strengths-Based Perspective</h3>
+              <p>Each individual possesses unique strengths, resources, and resilience. My role is to help you identify and leverage those inherent strengths &#8212; to overcome challenges rather than focus solely on deficit.</p>
             </div>
-
-            <div class="section animated-row" data-section="slide06">
-                <div class="section-inner">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 wide-col-laptop">
-                            <div class="title-block animate" data-animate="fadeInUp">
-                                <span><i class="fa-solid fa-suitcase"></i></span>
-                                <h2>Experience</h2>
-                            </div>
-                            <div class="gallery-section">
-                                <div class="gallery-list owl-carousel">
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="images/experience.png" alt="", style="opacity: 0.4;">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>Psychotherapist</h4>
-                                                <p>South West Yorkshire Partnership NHS Foundation Trust, Wakefield, UK (April 2024 - Present)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="images/experience.png" alt="", style="opacity: 0.4;">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>Bank Assistant Psychotherapist</h4>
-                                                <p>Black Country Healthcare NHS Foundation Trust, Birmingham, UK (September 2023 - Present)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="images/experience.png" alt="", style="opacity: 0.4;">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>Integrative Psychotherapist Trainee</h4>
-                                                <p>(Volunteer) - Black Country Healthcare NHS Foundation Trust, Birmingham, UK (June 2022 - February 2024)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="images/experience.png" alt="", style="opacity: 0.4;">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>Trainee Integrative Psychotherapist</h4>
-                                                <p>(Volunteer) - SP Counselling Service Ltd., Sutton Coldfield, UK (August 2022 - August 2023)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="images/experience.png" alt="", style="opacity: 0.4;">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>In-house Psychologist</h4>
-                                                <p>YourDOST, Bengaluru, India (January 2021 - July 2021)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="images/experience.png" alt="", style="opacity: 0.4;">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>Listener</h4>
-                                                <p>(Volunteer) - 7 CUPS (August 2020 - Present)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img img src="images/experience.png" alt="", style="opacity: 0.4;">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>Clinical Psychology Intern</h4>
-                                                <p>Manasa Neuropsychiatric Hospital, Bengaluru (July 2020 – September 2020)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img img src="images/experience.png" alt="", style="opacity: 0.4;">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>Clinical Psychology Intern</h4>
-                                                <p>Fortis Healthcare and Sukoon Health (July 2020 - July 2020)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="images/experience.png" alt="", style="opacity: 0.4;">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>Clinical Psychology Intern</h4>
-                                                <p>Emotions Matter Foundation, New Delhi (June 2020 – June 2020)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </li>
+          <li class="principle reveal">
+            <span class="principle-n">05</span>
+            <div class="principle-body">
+              <h3>Culturally-Informed Practice</h3>
+              <p>I am committed to culturally competent, inclusive care &#8212; honouring the diverse backgrounds, identities, and experiences of every client. Equality, Diversity and Inclusion is central to my practice, guided by the Equality Act 2010.</p>
             </div>
-
-            <div class="section animated-row" data-section="slide05">
-                <div class="section-inner">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 wide-col-laptop">
-                            <div class="title-block animate" data-animate="fadeInUp">
-                                <span>TESTIMONIALS</span>
-                                <h2>what THEY SAY?</h2>
-                            </div>
-                            <div class="col-md-8 offset-md-2">
-                                <div class="testimonials-section">
-                                    <div class="testimonials-slider owl-carousel">
-                                        <div class="item animate" data-animate="fadeInUp">
-                                            <div class="testimonial-item">
-                                                <div class="client-row">
-                                                    <img src="images/logo3.png" class="rounded-circle" alt="profile 1">
-                                                </div>
-                                                <div class="testimonial-content">
-                                                    <h4>Note</h4>
-                                                    <p>Testimonials from satisfied clients showcasing the positive impact have not been provided due to confidentiality purposes.
-                                                        I am committed to complying with the terms of the Data Protection Act 2018 (DPA) as amended by the UK General Data Protection Regulation 2021 (GDPR).</p>
-                                                    <span></span>
-                                                </div>                                           
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </li>
+          <li class="principle reveal">
+            <span class="principle-n">06</span>
+            <div class="principle-body">
+              <h3>Evidence-Based &amp; Long-Term Growth</h3>
+              <p>I integrate evidence-based practices supported by research and clinical expertise, staying current through continuous professional development. The goal is not only to alleviate symptoms &#8212; it is to foster lasting resilience and the capacity to navigate life with confidence.</p>
             </div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-            <div class="section animated-row" data-section="slide07">
-                <div class="section-inner">
-                    <div class="row justify-content-center">
-                        <div class="col-md-7 wide-col-laptop">
-                            <div class="title-block animate" data-animate="fadeInUp">
-                                <span>Contact</span>
-                                <h2>Get In Touch!</h2>
-                            </div>
-                            <div class="contact-section">
-                                <div class="row">
-                                    <div class="col-md-6 animate" data-animate="fadeInUp">
-                                        <div class="contact-box">
-                                            <div class="contact-row">
-                                                <i class="fa fa-phone"></i> +44-07404200135, +91-8197676893
-                                            </div>
-                                            <div class="contact-row">
-                                                <i class="fa fa-envelope"></i> inchalmatherapy@gmail.com
-                                            </div>
-                                            <div class="-row">
-                                                <i class="fa fa-bell"></i> Disclaimer: We do not operate as a crisis management center.
-                                              Therefore, if confronted with a life threatning circumstance inclduing serious self-harm or suicide, please dial 999 or proceed to the nearest ANE department without delay.
-                                              If there are worries about personal safety or that of an another individual, its crucial to see immediate assistance.   
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 animate" data-animate="fadeInUp">
-                                        <form id="ajax-contact" method="post" action="#">
-                                            <div class="input-field">
-                                                <input type="text" class="form-control" name="name" id="name" required placeholder="Name">
-                                            </div>
-                                            <div class="input-field">
-                                                <input type="email" class="form-control" name="email" id="email" required placeholder="Email">
-                                            </div>
-                                            <div class="input-field">
-                                                <textarea class="form-control" name="message" id="message" required placeholder="Message"></textarea>
-                                            </div>
-                                            <button class="btn" type="submit">Submit</button>
-                                        </form>
-                                        <div id="form-messages" class="mt-3"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- ── SERVICES ── -->
+    <section id="services" data-section="services">
+      <div class="panel">
+        <header class="section-header centered reveal">
+          <p class="section-label">What I offer</p>
+          <h2>Services</h2>
+        </header>
+        <div class="service-rows">
+          <div class="service-row reveal">
+            <div class="service-label">Format</div>
+            <div class="service-detail">
+              <strong>Individual online therapy</strong> via Google Meet or Zoom. Sessions are 50 minutes. The number of sessions is tailored to your unique needs &#8212; short-term and long-term work both welcome.
             </div>
+          </div>
+          <div class="service-row reveal">
+            <div class="service-label">Languages</div>
+            <div class="service-detail">
+              Therapy available in <strong>English</strong>, <strong>Hindi</strong>, and <strong>Kannada</strong>.
+            </div>
+          </div>
+          <div class="service-row reveal">
+            <div class="service-label">First step</div>
+            <div class="service-detail">
+              A <strong>free 30-minute consultation</strong> is offered to all prospective clients &#8212; no commitment required. A chance to ask questions and see if we are the right fit.
+            </div>
+          </div>
+          <div class="service-row reveal">
+            <div class="service-label">Fees</div>
+            <div class="service-detail">
+              <div class="fee-grid">
+                <div class="fee-card">
+                  <p class="fee-region">International</p>
+                  <p class="fee-price">&pound;40 <span>/session</span></p>
+                  <p class="fee-concession">Students: &pound;30</p>
+                </div>
+                <div class="fee-card">
+                  <p class="fee-region">India</p>
+                  <p class="fee-price">&#8377;2,000 <span>/session</span></p>
+                  <p class="fee-concession">Students: &#8377;1,500</p>
+                </div>
+              </div>
+              <p class="fee-note">Payment by bank transfer on the day of the session. Sliding scale pricing available on request.</p>
+            </div>
+          </div>
         </div>
-
-        <div id="social-icons">
-            <div class="text-right">
-                <ul class="social-icons">
-                    <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#" title="Instagram"><i class="fa fa-behance"></i></a></li>
-                </ul>
-            </div>
+        <div class="services-cta reveal">
+          <a href="#contact" class="btn-primary">Book a free consultation</a>
         </div>
-    </div>  
+      </div>
+    </section>
 
-    <script src="js/jquery.js"></script>
+    <!-- ── EXPERIENCE ── -->
+    <section id="experience" data-section="experience">
+      <div class="panel">
+        <header class="section-header centered reveal">
+          <p class="section-label">Professional background</p>
+          <h2>Experience</h2>
+        </header>
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-date">2024&thinsp;&ndash;&thinsp;Present</span>
+            <div class="tl-body">
+              <h4>Psychotherapist</h4>
+              <p>South West Yorkshire Partnership NHS Foundation Trust, Wakefield, UK</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-date">2023&thinsp;&ndash;&thinsp;Present</span>
+            <div class="tl-body">
+              <h4>Bank Assistant Psychotherapist</h4>
+              <p>Black Country Healthcare NHS Foundation Trust, Birmingham, UK</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-date">2022&thinsp;&ndash;&thinsp;2024</span>
+            <div class="tl-body">
+              <h4>Integrative Psychotherapist Trainee</h4>
+              <p>Black Country Healthcare NHS Foundation Trust, Birmingham, UK <em>(Volunteer)</em></p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-date">2022&thinsp;&ndash;&thinsp;2023</span>
+            <div class="tl-body">
+              <h4>Trainee Integrative Psychotherapist</h4>
+              <p>SP Counselling Service Ltd., Sutton Coldfield, UK <em>(Volunteer)</em></p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-date">2021</span>
+            <div class="tl-body">
+              <h4>In-house Psychologist</h4>
+              <p>YourDOST, Bengaluru, India</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-date">2020&thinsp;&ndash;&thinsp;Present</span>
+            <div class="tl-body">
+              <h4>Listener</h4>
+              <p>7 CUPS <em>(Volunteer)</em></p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-date">2020</span>
+            <div class="tl-body">
+              <h4>Clinical Psychology Intern</h4>
+              <p>Manasa Neuropsychiatric Hospital, Bengaluru &middot; Fortis Healthcare &middot; Sukoon Health &middot; Emotions Matter Foundation, New Delhi</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-    <script src="js/bootstrap.min.js"></script>
+    <!-- ── TESTIMONIALS ── -->
+    <section id="testimonials" data-section="testimonials">
+      <div class="panel panel--dark">
+        <header class="section-header centered reveal">
+          <p class="section-label">What clients say</p>
+          <h2>Testimonials</h2>
+        </header>
+        <div class="testimonials-wrap">
+          <figure class="testimonial reveal">
+            <blockquote>
+              <p>"Working with Nirupama has been a transformative experience. She created a space where I felt genuinely heard and supported through one of the most difficult periods of my life. I am deeply grateful for her compassionate, thoughtful approach."</p>
+            </blockquote>
+            <figcaption>
+              <span class="client-name">&#8212; A Client</span>
+              <span class="client-note">Identity withheld in accordance with BACP guidelines</span>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="testimonials-disclaimer reveal">Testimonials are published only with explicit written client consent, in accordance with the Data Protection Act 2018 and UK GDPR 2021.</p>
+      </div>
+    </section>
 
-    <script src="js/fullpage.min.js"></script>
+    <!-- ── CONTACT ── -->
+    <section id="contact" data-section="contact">
+      <div class="panel panel--dark">
+        <header class="section-header centered reveal">
+          <p class="section-label">Reach out</p>
+          <h2>Get in Touch</h2>
+          <p class="section-intro">Taking the first step is often the hardest part. I offer a free 30-minute consultation &#8212; no commitment, no pressure. I look forward to hearing from you.</p>
+        </header>
+        <div class="contact-cards reveal">
+          <a href="mailto:inchalmatherapy@gmail.com" class="contact-card">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span class="cc-label">Email</span>
+            <span class="cc-value">inchalmatherapy@gmail.com</span>
+          </a>
+          <a href="tel:+447404200135" class="contact-card">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <span class="cc-label">UK</span>
+            <span class="cc-value">+44 07404 200135</span>
+          </a>
+          <a href="tel:+918197676893" class="contact-card">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <span class="cc-label">India</span>
+            <span class="cc-value">+91 8197 676893</span>
+          </a>
+        </div>
+        <div class="contact-actions reveal">
+          <a href="mailto:inchalmatherapy@gmail.com" class="btn-primary">Send an email</a>
+          <a href="tel:+447404200135" class="btn-ghost">Call UK</a>
+        </div>
+        <footer class="contact-footer reveal">
+          <img src="images/bacp.png" alt="BACP" class="footer-bacp">
+          <p class="crisis-notice">
+            <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+            This practice is not a crisis centre. If you are in immediate danger, please dial <strong>999</strong> or attend your nearest A&amp;E department.
+          </p>
+        </footer>
+      </div>
+    </section>
 
-    <script src="js/scrolloverflow.js"></script>
+  </main>
 
-    <script src="js/owl.carousel.min.js"></script>
-
-    <script src="js/jquery.inview.min.js"></script>
-
-    <script src="js/form.js"></script>
-
-    <script src="js/custom.js"></script>
-
-
-  </body>
+  <script src="js/custom.js"></script>
+</body>
 </html>

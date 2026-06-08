@@ -32,6 +32,10 @@ body {
   -ms-font-smoothing: antialiased;
   font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   font: 16px/1.6 'Raleway', Arial, Helvetica, sans-serif;
@@ -47,7 +51,6 @@ html {
   -ms-overflow-style: scrollbar;
 }
 .alltrans,
-.social-icons li a,
 .owl-nav > button,
 .owl-nav > button:after,
 .counter-box,
@@ -135,10 +138,11 @@ video {
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
+  z-index: -2;
 }
 #video:after {
   content: '';
-  opacity: 0.75;
+  opacity: 0.58;
   background: #4096ee; /* Old browsers */
   background: -moz-linear-gradient(top, #4096ee 0%, #39ced6 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #4096ee 0%,#39ced6 100%); /* Chrome10-25,Safari5.1-6 */
@@ -149,6 +153,7 @@ video {
   top:0;
   right:0;
   bottom: 0;
+  z-index: -1;
 }
 .wrapper-background-dark:after {
   background: #222;
@@ -157,11 +162,34 @@ video {
 .section-inner {
   padding:20px 30px 0;
 }
-.fp-scrollable {
-  height:calc(100vh - 200px) !important;
+#fullpage {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
 }
-#fp-nav ul li a span {
- display: none;
+.section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 96px 0 40px;
+  scroll-margin-top: 96px;
+}
+
+.welcome-box,
+.about-contentbox,
+.title-block,
+.service-box,
+.skills-row,
+.testimonials-section,
+.contact-section,
+.gallery-section {
+  position: relative;
+  z-index: 3;
 }
 
 .btn {
@@ -287,10 +315,6 @@ video {
   }
 }
 
-#fullpage {
-  z-index: 99;
-}
-
 .sticky-image {
   position: fixed; /* Stick the image to a spot in the viewport */
   right: 10px; /* Distance from the right of the viewport */
@@ -393,40 +417,7 @@ a#logo {
   display:block;
 }
 
-/*==============================================
-03. SOCIAL ICONS CSS
-================================================*/
-#social-icons {
-  padding:0;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  right:0;
-  z-index: 199;
-}
-.social-icons {
-  margin:0;
-  padding:0;
-  list-style:none;
-}
-.social-icons li {
-  display: block;
-  margin: 1px 0px;
-}
-.social-icons li a {
-  width:50px;
-  height:50px;
-  display:inline-block;
-  line-height:50px;
-  text-align:center;
-  background: rgba(255, 255, 255, 0.1);
-  color: rgba(255,255,255,1);
-  font-size:18px;
-}
-.social-icons li a:hover {
-  color:#1e1e1e;
-  background-color: #fff;
-}
+
 /*==============================================
 04. WELCOME BLOCK CSS
 ================================================*/
@@ -790,6 +781,17 @@ textarea.form-control {
 .contact-section .btn {
   width:100%;
 }
+.quick-actions {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0;
+  gap: 15px;
+  justify-content: flex-start;
+}
+.quick-actions .btn {
+  width: auto;
+  min-width: 160px;
+}
 .contact-box {
   text-align:left;
 }
@@ -912,4 +914,374 @@ textarea.form-control {
   height: 6px;
   background-color: #fff;
   border-radius: 3px;
+}
+
+/*==============================================
+11. POLISH OVERRIDES
+================================================*/
+:root {
+  --font-sans: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --text-primary: #0f2f40;
+  --text-secondary: #1f4f62;
+  --surface-soft: rgba(255, 255, 255, 0.2);
+  --surface-strong: rgba(255, 255, 255, 0.9);
+  --surface-panel: rgba(240, 249, 253, 0.9);
+  --line-soft: rgba(255, 255, 255, 0.35);
+  --brand-deep: #0e486a;
+  --brand-ink: #08344d;
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+  color: #072a3a;
+  text-transform: none;
+}
+
+h1,
+h2 {
+  font-size: clamp(2rem, 2.8vw, 3.6rem);
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
+h4 {
+  font-size: clamp(1.15rem, 1.6vw, 1.5rem);
+}
+
+a {
+  color: var(--brand-ink);
+}
+
+a:hover,
+a:focus {
+  color: #0a5678;
+}
+
+#video:after,
+.preloader {
+  background: linear-gradient(180deg, #5eb0e8 0%, #6ad5df 45%, #7ee5d3 100%);
+}
+
+#header {
+  backdrop-filter: blur(8px);
+  background: rgba(243, 250, 253, 0.32);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-box {
+    background: rgba(245, 251, 255, 0.56);
+    border: 1px solid rgba(255, 255, 255, 0.62);
+    border-radius: 999px;
+    padding: 10px 18px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 24px rgba(7, 44, 63, 0.15);
+  }
+
+  .navbar-nav li {
+    margin-left: 24px;
+  }
+}
+
+.section-inner {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-4) 0;
+}
+
+.navbar-text,
+a#logo {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.2vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.navbar-nav li a {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #102c3b;
+}
+
+.btn {
+  border-radius: 999px;
+  border: 1px solid var(--line-soft);
+  backdrop-filter: blur(3px);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.btn.btn-outline {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.welcome-first {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.2vw, 2.4rem);
+  color: #062537;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.welcome-box {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 40px 42px;
+  border-radius: 28px;
+  background: var(--surface-panel);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 28px 50px rgba(6, 37, 55, 0.24);
+  backdrop-filter: blur(12px);
+}
+
+.welcome-box > img {
+  width: min(230px, 48vw) !important;
+  height: auto !important;
+  margin: 10px auto 16px;
+  display: block;
+}
+
+.welcome-box h4 {
+  max-width: 760px;
+  margin: 0 auto var(--space-3);
+  font-size: clamp(1.4rem, 2.5vw, 2.4rem);
+  color: #062234;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.welcome-box p {
+  max-width: 760px;
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  color: #0b3348;
+}
+
+.welcome-box .next-section {
+  position: static;
+  transform: none;
+  margin-top: 18px;
+}
+
+.welcome-box .next-section span {
+  color: #0c3449;
+  letter-spacing: 0.06em;
+}
+
+.title-block span {
+  color: var(--brand-ink);
+  letter-spacing: 0.08em;
+}
+
+.title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.title-block h2 {
+  margin-bottom: 0;
+}
+
+.about-background,
+.services-list .item,
+.portfolio-item .thumb-inner,
+.contact-row,
+.testimonials-section .item,
+.facts-list .item {
+  background: var(--surface-soft);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(5px);
+}
+
+.about-section,
+.services-section,
+.skills-row,
+.gallery-section,
+.testimonials-section,
+.contact-section {
+  background: var(--surface-panel);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 18px 34px rgba(5, 40, 59, 0.22);
+  backdrop-filter: blur(10px);
+}
+
+.about-section,
+.services-section,
+.gallery-section,
+.testimonials-section,
+.contact-section {
+  margin-top: 20px;
+}
+
+.about-background {
+  padding: var(--space-4);
+}
+
+.about-contentbox h6 {
+  font-size: 1.2rem;
+  color: #0a3b51;
+}
+
+.about-contentbox p,
+.service-box p,
+.testimonial-content p,
+.skills-row h6,
+.contact-row {
+  color: var(--text-primary);
+}
+
+.facts-list .item,
+.service-box,
+.testimonials-section .item {
+  padding: var(--space-4);
+}
+
+.service-icon {
+  color: var(--brand-deep);
+}
+
+.service-box h3 {
+  font-size: clamp(1.2rem, 1.7vw, 1.6rem);
+}
+
+.portfolio-item .thumb-inner {
+  min-height: 88px;
+}
+
+.portfolio-item:hover .thumb-inner {
+  background: var(--surface-strong);
+}
+
+.testimonials-section .item h4 {
+  margin-top: var(--space-4);
+}
+
+.skills-row {
+  margin-top: var(--space-5);
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.skills-row h6 {
+  text-transform: none;
+  font-family: var(--font-sans);
+}
+
+.filled-bar,
+.filled-bar-2 {
+  background-color: var(--brand-deep);
+}
+
+.contact-row {
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.quick-actions {
+  border: none;
+}
+
+.quick-actions .btn {
+  border-color: var(--brand-deep);
+  color: #fff;
+  background: rgba(8, 52, 77, 0.6);
+}
+
+.quick-actions .btn:hover,
+.quick-actions .btn:focus {
+  background: #ffffff;
+  color: var(--brand-ink);
+  border-color: #ffffff;
+}
+
+.sticky-image {
+  width: min(140px, 18vw);
+  opacity: 0.2;
+}
+
+.sticky-image:hover {
+  width: min(180px, 22vw);
+}
+
+.preloader {
+  display: none !important;
+}
+
+.animate {
+  opacity: 1;
+}
+
+.next-section img {
+  opacity: 0.7;
+}
+
+.section[data-section='home'] .welcome-box {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 40px 42px;
+  border-radius: 28px;
+  background: rgba(240, 249, 253, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 28px 50px rgba(6, 37, 55, 0.24);
+  backdrop-filter: blur(12px);
+}
+
+.section[data-section='home'] .welcome-box > img {
+  width: min(230px, 48vw) !important;
+  height: auto !important;
+  margin: 10px auto 16px;
+  display: block;
+}
+
+.section[data-section='services'] .skills-row,
+.section[data-section='about'] .about-section,
+.section[data-section='philosophy'] .services-section,
+.section[data-section='experience'] .gallery-section,
+.section[data-section='testimonials'] .testimonials-section,
+.section[data-section='contact'] .contact-section {
+  background: rgba(240, 249, 253, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 18px 34px rgba(5, 40, 59, 0.22);
+  backdrop-filter: blur(10px);
 }
