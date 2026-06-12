@@ -13,13 +13,12 @@
 </head>
 <body>
 
-  <!-- Fixed video background -->
-  <div id="video-bg">
-    <video autoplay muted loop playsinline id="bg-video" preload="none" poster="images/video-poster.jpg">
-      <source src="images/video-bg1.webm" type="video/webm">
-      <source src="images/video-bg1.mp4" type="video/mp4">
-    </video>
-    <div class="video-overlay"></div>
+  <!-- Fixed ambient background theme -->
+  <div id="ambient-bg" aria-hidden="true">
+    <div class="ambient-orb orb-a"></div>
+    <div class="ambient-orb orb-b"></div>
+    <div class="ambient-grid"></div>
+    <div class="ambient-overlay"></div>
   </div>
 
   <!-- Site header -->
@@ -70,19 +69,27 @@
     <section id="hero" data-section="hero">
       <div class="hero-inner">
         <img src="images/logo3.png" alt="Therapy By Inchalmath" class="hero-logo reveal-hero">
-        <p class="hero-eyebrow reveal-hero" style="--d:.10s">Welcome to</p>
+        <p class="hero-eyebrow reveal-hero" style="--d:.10s">A warm welcome</p>
         <h1 class="hero-title reveal-hero" style="--d:.12s">
-          Therapy<br><em>By Inchalmath</em>
+          Creating a Safe Haven<br><em>for Healing &amp; Growth</em>
         </h1>
         <p class="hero-tagline reveal-hero" style="--d:.26s">
-          A safe and supportive space for healing, growth, and self-discovery.
+          Integrative psychotherapy, online &#8212; a collaborative journey rooted in compassion, curiosity, and care.
         </p>
         <blockquote class="hero-quote reveal-hero" style="--d:.40s">
           <p>"Psychotherapy isn't a twentieth-century artifice imposed on nature, but the reinstatement of a natural healing process."</p>
           <cite>&#8202;&#8212; Patricia Love</cite>
         </blockquote>
-        <a href="#about" class="hero-cta reveal-hero" style="--d:.54s">Begin the journey</a>
-        <div class="hero-scroll reveal-hero" style="--d:.68s" aria-hidden="true">
+        <div class="hero-cta-group reveal-hero" style="--d:.54s">
+          <a href="#contact" class="hero-cta hero-cta-primary">Book a free consultation</a>
+          <a href="#about" class="hero-cta hero-cta-secondary">About Nirupama</a>
+        </div>
+        <ul class="hero-highlights reveal-hero" style="--d:.62s">
+          <li>50-minute online sessions</li>
+          <li>English, Hindi &amp; Kannada</li>
+          <li>Free 30-minute initial consultation</li>
+        </ul>
+        <div class="hero-scroll reveal-hero" style="--d:.70s" aria-hidden="true">
           <span class="scroll-line"></span>
         </div>
       </div>
@@ -91,41 +98,81 @@
     <!-- ── ABOUT ── -->
     <section id="about" data-section="about">
       <div class="panel">
-        <div class="about-grid">
-          <aside class="about-aside">
-            <figure class="portrait-fig reveal">
-              <img src="images/me.png" alt="Nirupama Inchalmath, Integrative Psychotherapist">
-            </figure>
-            <ul class="credential-pills reveal">
-              <li>CBT &middot; Attachment Theory</li>
-              <li>Person-Centred Approach</li>
-              <li>ACT &middot; CFT &middot; DBT</li>
-              <li>English &middot; Hindi &middot; Kannada</li>
-            </ul>
-            <div class="bacp-accred reveal">
+        <header class="section-header reveal">
+          <p class="section-label">An invitation</p>
+          <h2>Discover Healing Through Psychotherapy</h2>
+          <p class="section-intro section-intro--left">At Nirupama Inchalmath Psychotherapy, I believe in the profound capacity of therapy to impact lives. My practice offers a safe, supportive environment where individuals can explore their thoughts, feelings, and experiences with complete openness.</p>
+        </header>
+
+        <div class="about-showcase reveal">
+          <figure class="portrait-fig">
+            <img src="images/me.png" alt="Nirupama Inchalmath, Integrative Psychotherapist">
+          </figure>
+          <div class="about-intro">
+            <h3>Nirupama Inchalmath</h3>
+            <p class="role-title">Integrative Counsellor &amp; Psychotherapist</p>
+            <div class="bacp-badge">
               <img src="images/bacp.png" alt="BACP Registered Member">
-              <span>BACP Registered Member</span>
+              <span>MBACP Registered &middot; No. 403638</span>
             </div>
-          </aside>
-          <div class="about-copy">
-            <header class="section-header reveal">
-              <p class="section-label">About me</p>
-              <h2>Discover Healing<br>Through Psychotherapy</h2>
-            </header>
-            <p class="reveal">At Nirupama Inchalmath Psychotherapy, I believe in the profound capacity of therapy to impact lives. My practice offers a safe, supportive environment where individuals can explore their thoughts, feelings, and experiences with complete openness.</p>
-            <p class="reveal">I am a qualified Integrative Counsellor and Psychotherapist, and a registered member of the British Association for Counselling and Psychotherapy (BACP), adhering to its ethical framework. I offer an integrative approach drawing on Cognitive Behavioural Therapy, Attachment Theory, and Person-Centred Approach, as well as ACT, Compassion Focussed Therapy, and DBT.</p>
-            <p class="reveal">I perceive therapy as a collaborative journey navigating the depths of human experience with both care and clinical rigour. I embrace an ecological, biopsychosocial standpoint and have worked with people from the East to the West, across varied cultural backgrounds, all genders, sexualities, and age groups. I offer therapy in Hindi and Kannada within the UK.</p>
-            <div class="areas-block reveal">
-              <p class="areas-label">Areas of support</p>
-              <ul class="areas-list">
-                <li>Mental Health Concerns</li>
-                <li>Relationship Issues</li>
-                <li>Life Transitions</li>
-                <li>Self-Exploration</li>
-                <li>Behavioural Change</li>
-              </ul>
+            <div class="about-bio">
+              <p>I am a qualified Integrative Counsellor and Psychotherapist and a registered member of the British Association for Counselling and Psychotherapy (BACP), adhering to its ethical framework. I am committed to providing a safe, non-judgmental and collaborative space for clients from diverse backgrounds.</p>
+              <p>My practice draws on Cognitive Behavioural Therapy, Attachment Theory and the Person-Centred Approach, with elements of ACT, Compassion Focussed Therapy and DBT woven in where they serve you best.</p>
+              <p>I have worked with people from the East to the West &mdash; across cultures, faiths, genders, sexualities and ages &mdash; including delivering therapy in Hindi in the UK.</p>
+            </div>
+            <div class="about-stats">
+              <div class="about-stat">
+                <span class="stat-label">Languages</span>
+                <span class="stat-value">English &middot; Hindi &middot; Kannada</span>
+              </div>
+              <div class="about-stat">
+                <span class="stat-label">Training</span>
+                <span class="stat-value">MSc &middot; BACP Accredited</span>
+              </div>
+              <div class="about-stat">
+                <span class="stat-label">Approach</span>
+                <span class="stat-value">Integrative &amp; Trauma-informed</span>
+              </div>
             </div>
           </div>
+        </div>
+
+        <div class="about-pillars">
+          <article class="pillar-card reveal">
+            <div class="pillar-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Integrative</h3>
+            <p>CBT, Attachment Theory, Person-Centred Approach, ACT, CFT, and DBT &mdash; tailored to your unique story.</p>
+          </article>
+          <article class="pillar-card reveal">
+            <div class="pillar-icon"><i class="fas fa-handshake"></i></div>
+            <h3>Collaborative</h3>
+            <p>You are the expert in your life &mdash; therapy is a shared, respectful dialogue built at your pace.</p>
+          </article>
+          <article class="pillar-card reveal">
+            <div class="pillar-icon"><i class="fas fa-globe"></i></div>
+            <h3>Cross-Cultural</h3>
+            <p>Worked with people from East to West &mdash; across cultures, genders, sexualities and ages.</p>
+          </article>
+        </div>
+
+        <div class="about-duo">
+          <article class="info-card reveal">
+            <p class="section-label">What is it?</p>
+            <h3>Psychotherapy, simply</h3>
+            <p>Also known as talk therapy or counselling, psychotherapy is a collaborative process between a therapist and a client. It provides a confidential space to openly discuss concerns, challenges, and goals &mdash; promoting self-awareness, emotional healing, and personal growth.</p>
+          </article>
+
+          <article class="info-card reveal">
+            <p class="section-label">How it helps</p>
+            <h3>Areas we can explore</h3>
+            <ul class="areas-list areas-list--stacked">
+              <li><strong>Mental health:</strong> Depression, anxiety, trauma, stress and more.</li>
+              <li><strong>Relationships:</strong> Communication, conflict, deeper connection.</li>
+              <li><strong>Life transitions:</strong> Marriage, divorce, career, loss.</li>
+              <li><strong>Self-exploration:</strong> Values, identity, meaning.</li>
+              <li><strong>Behavioural change:</strong> Coping strategies and resilience.</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
@@ -134,103 +181,103 @@
     <section id="philosophy" data-section="philosophy">
       <div class="panel">
         <header class="section-header centered reveal">
-          <p class="section-label">My approach</p>
-          <h2>Philosophy</h2>
-          <p class="section-intro">My approach is rooted in deep respect for the unique journey of each individual. No two people are alike &#8212; so every therapeutic relationship is tailored to the specific needs and goals of the person in front of me.</p>
+          <p class="section-label">The work, together</p>
+          <h2>Begin Your Journey Towards Healing</h2>
+          <p class="section-intro">Whether you're navigating anxiety, a difficult life transition, or seeking growth &mdash; we'll walk this path together, one step at a time. Therapy is not a destination, but a quiet unfolding.</p>
         </header>
-        <ol class="principles">
-          <li class="principle reveal">
-            <span class="principle-n">01</span>
-            <div class="principle-body">
-              <h3>What is Psychotherapy?</h3>
-              <p>A collaborative process between therapist and client &#8212; a confidential space to openly discuss concerns, challenges, and goals. Through dialogue and exploration, psychotherapy promotes self-awareness, emotional healing, and personal growth.</p>
+        <ul class="journey-points reveal">
+          <li>A pace that honours your story</li>
+          <li>Tools rooted in evidence and empathy</li>
+          <li>A confidential, judgment-free space</li>
+        </ul>
+
+        <div class="values-grid">
+          <article class="value-card reveal">
+            <div class="value-icon">
+              <i class="fas fa-heart"></i>
             </div>
-          </li>
-          <li class="principle reveal">
-            <span class="principle-n">02</span>
-            <div class="principle-body">
-              <h3>Holistic Healing</h3>
-              <p>I believe in addressing the interconnectedness of mind, body, and environment. Taking a holistic approach means considering every dimension of your well-being to promote comprehensive healing &#8212; not merely symptom relief.</p>
+            <h3>Compassionate</h3>
+            <p>A non-judgmental space where you feel heard, understood and accepted.</p>
+          </article>
+          <article class="value-card reveal">
+            <div class="value-icon">
+              <i class="fas fa-handshake"></i>
             </div>
-          </li>
-          <li class="principle reveal">
-            <span class="principle-n">03</span>
-            <div class="principle-body">
-              <h3>Collaborative Partnership</h3>
-              <p>You are the expert on your own life. I value open dialogue, mutual respect, and shared decision-making. Therapy works best when your self-knowledge meets my clinical expertise in equal measure.</p>
+            <h3>Collaborative</h3>
+            <p>You are the expert in your life &mdash; therapy is a shared, respectful dialogue.</p>
+          </article>
+          <article class="value-card reveal">
+            <div class="value-icon">
+              <i class="fas fa-cube"></i>
             </div>
-          </li>
-          <li class="principle reveal">
-            <span class="principle-n">04</span>
-            <div class="principle-body">
-              <h3>Strengths-Based Perspective</h3>
-              <p>Each individual possesses unique strengths, resources, and resilience. My role is to help you identify and leverage those inherent strengths &#8212; to overcome challenges rather than focus solely on deficit.</p>
-            </div>
-          </li>
-          <li class="principle reveal">
-            <span class="principle-n">05</span>
-            <div class="principle-body">
-              <h3>Culturally-Informed Practice</h3>
-              <p>I am committed to culturally competent, inclusive care &#8212; honouring the diverse backgrounds, identities, and experiences of every client. Equality, Diversity and Inclusion is central to my practice, guided by the Equality Act 2010.</p>
-            </div>
-          </li>
-          <li class="principle reveal">
-            <span class="principle-n">06</span>
-            <div class="principle-body">
-              <h3>Evidence-Based &amp; Long-Term Growth</h3>
-              <p>I integrate evidence-based practices supported by research and clinical expertise, staying current through continuous professional development. The goal is not only to alleviate symptoms &#8212; it is to foster lasting resilience and the capacity to navigate life with confidence.</p>
-            </div>
-          </li>
-        </ol>
+            <h3>Integrative</h3>
+            <p>CBT, attachment theory, person-centred and compassion-focused work tailored to your unique story.</p>
+          </article>
+        </div>
+
+        <div class="section-cta centered reveal">
+          <a href="#contact" class="btn-primary">Schedule a consultation</a>
+        </div>
       </div>
     </section>
 
     <!-- ── SERVICES ── -->
     <section id="services" data-section="services">
       <div class="panel">
-        <header class="section-header centered reveal">
-          <p class="section-label">What I offer</p>
-          <h2>Services</h2>
+        <header class="section-header reveal">
+          <p class="section-label">Services</p>
+          <h2>Therapy that meets you where you are</h2>
+          <p class="section-intro section-intro--left">Individual psychotherapy, online &mdash; held with care, in the language you feel most yourself in.</p>
         </header>
-        <div class="service-rows">
-          <div class="service-row reveal">
-            <div class="service-label">Format</div>
-            <div class="service-detail">
-              <strong>Individual online therapy</strong> via Google Meet or Zoom. Sessions are 50 minutes. The number of sessions is tailored to your unique needs &#8212; short-term and long-term work both welcome.
+
+        <div class="service-features reveal">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-video"></i>
             </div>
+            <h3>Online Sessions</h3>
+            <p>50-minute sessions via Google Meet or Zoom</p>
           </div>
-          <div class="service-row reveal">
-            <div class="service-label">Languages</div>
-            <div class="service-detail">
-              Therapy available in <strong>English</strong>, <strong>Hindi</strong>, and <strong>Kannada</strong>.
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-globe"></i>
             </div>
+            <h3>Multilingual</h3>
+            <p>English, Hindi &amp; Kannada</p>
           </div>
-          <div class="service-row reveal">
-            <div class="service-label">First step</div>
-            <div class="service-detail">
-              A <strong>free 30-minute consultation</strong> is offered to all prospective clients &#8212; no commitment required. A chance to ask questions and see if we are the right fit.
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-handshake"></i>
             </div>
+            <h3>Free Consultation</h3>
+            <p>30-minute initial consultation</p>
           </div>
-          <div class="service-row reveal">
-            <div class="service-label">Fees</div>
-            <div class="service-detail">
-              <div class="fee-grid">
-                <div class="fee-card">
-                  <p class="fee-region">International</p>
-                  <p class="fee-price">&pound;40 <span>/session</span></p>
-                  <p class="fee-concession">Students: &pound;30</p>
-                </div>
-                <div class="fee-card">
-                  <p class="fee-region">India</p>
-                  <p class="fee-price">&#8377;2,000 <span>/session</span></p>
-                  <p class="fee-concession">Students: &#8377;1,500</p>
-                </div>
-              </div>
-              <p class="fee-note">Payment by bank transfer on the day of the session. Sliding scale pricing available on request.</p>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-calendar-check"></i>
             </div>
+            <h3>Flexible Options</h3>
+            <p>Short-term and long-term therapy</p>
           </div>
         </div>
+
+        <div class="fee-grid reveal">
+          <div class="fee-card">
+            <p class="fee-region">International</p>
+            <p class="fee-price">&pound;40 <span>/session</span></p>
+            <p class="fee-concession">Students: &pound;30</p>
+          </div>
+          <div class="fee-card">
+            <p class="fee-region">India</p>
+            <p class="fee-price">&#8377;2,000 <span>/session</span></p>
+            <p class="fee-concession">Students: &#8377;1,500</p>
+          </div>
+        </div>
+
+        <p class="fee-note reveal">Payment by bank transfer on the day of the session. Sliding scale pricing available on request.</p>
+
         <div class="services-cta reveal">
+          <a href="#experience" class="btn-ghost btn-ghost--ink">Explore experience</a>
           <a href="#contact" class="btn-primary">Book a free consultation</a>
         </div>
       </div>
@@ -348,17 +395,48 @@
           <a href="mailto:inchalmatherapy@gmail.com" class="btn-primary">Send an email</a>
           <a href="tel:+447404200135" class="btn-ghost">Call UK</a>
         </div>
-        <footer class="contact-footer reveal">
-          <img src="images/bacp.png" alt="BACP" class="footer-bacp">
-          <p class="crisis-notice">
-            <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
-            This practice is not a crisis centre. If you are in immediate danger, please dial <strong>999</strong> or attend your nearest A&amp;E department.
-          </p>
-        </footer>
       </div>
     </section>
 
   </main>
+
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo3.png" alt="Nirupama Inchalmath Psychotherapy" class="footer-logo">
+        <p class="footer-brand-name">Nirupama Inchalmath<br><span>PSYCHOTHERAPY</span></p>
+        <p class="footer-tagline">A safe haven for healing and growth.<br>Integrative psychotherapy, online &mdash;<br>in English, Hindi &amp; Kannada.</p>
+        <p class="footer-reg">MBACP Registered &middot; No. 403638</p>
+        <img src="images/bacp.png" alt="BACP" class="footer-bacp-logo">
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">EXPLORE</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#services">Services &amp; Fees</a></li>
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">GET IN TOUCH</h4>
+        <ul class="footer-links">
+          <li><a href="tel:+447404200135">+44 7404 200135</a></li>
+          <li><a href="tel:+918197676893">+91 8197 676893</a></li>
+          <li><a href="mailto:inchalmatherapy@gmail.com">inchalmatherapy@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/nirupama-inchalmath/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Nirupama Inchalmath Psychotherapy. All rights reserved.</p>
+      <p class="footer-disclaimer">
+        <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+        Disclaimer: Not a crisis service. In an emergency dial <strong>999</strong> or attend your nearest A&amp;E.
+      </p>
+    </div>
+  </footer>
 
   <script src="js/custom.js"></script>
 </body>
