@@ -123,13 +123,13 @@ strong { font-weight: 600; }
   height: var(--header-h);
   z-index: 50;
   transition: backdrop-filter .25s ease, background .25s ease, box-shadow .25s ease;
-  background: linear-gradient(90deg, #162a57 0%, #133f6a 55%, #114e66 100%);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.24), 0 12px 30px rgba(10, 24, 52, 0.44);
+  background: linear-gradient(90deg, #0a1e3a 0%, #081d47 55%, #07253a 100%);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 12px 30px rgba(5, 12, 28, 0.54);
 }
 #site-header.scrolled {
   backdrop-filter: blur(14px) saturate(1.2);
-  background: linear-gradient(90deg, rgba(22, 42, 87, 0.95) 0%, rgba(19, 63, 106, 0.95) 55%, rgba(17, 78, 102, 0.95) 100%);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.28), 0 12px 28px rgba(10, 24, 52, 0.42);
+  background: linear-gradient(90deg, rgba(10, 30, 58, 0.97) 0%, rgba(8, 29, 71, 0.97) 55%, rgba(7, 37, 58, 0.97) 100%);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.32), 0 12px 28px rgba(5, 12, 28, 0.5);
 }
 .header-inner {
   width: min(1200px, 100% - 36px);
@@ -225,7 +225,7 @@ body.nav-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) rotat
   gap: 12px;
   opacity: 0;
   pointer-events: none;
-  background: linear-gradient(165deg, rgba(20, 35, 66, 0.95) 0%, rgba(16, 48, 78, 0.97) 100%);
+  background: linear-gradient(165deg, rgba(8, 22, 45, 0.96) 0%, rgba(10, 35, 60, 0.98) 100%);
   backdrop-filter: blur(16px);
   transition: opacity .25s ease;
 }
@@ -1170,7 +1170,7 @@ section:not(#hero) {
 #site-footer {
   position: relative;
   z-index: 10;
-  background: linear-gradient(145deg, #172b57 0%, #133f66 60%, #114f63 100%);
+  background: linear-gradient(145deg, #0a1a35 0%, #081f47 60%, #072236 100%);
   color: rgba(255, 255, 255, 0.82);
   padding: 64px 0 0;
   font-family: var(--font-body);
