@@ -123,13 +123,13 @@ strong { font-weight: 600; }
   height: var(--header-h);
   z-index: 50;
   transition: backdrop-filter .25s ease, background .25s ease, box-shadow .25s ease;
-  background: linear-gradient(90deg, #213b6f 0%, #185f88 55%, #17737f 100%);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.18), 0 12px 28px rgba(18, 43, 86, 0.34);
+  background: linear-gradient(90deg, #162a57 0%, #133f6a 55%, #114e66 100%);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.24), 0 12px 30px rgba(10, 24, 52, 0.44);
 }
 #site-header.scrolled {
   backdrop-filter: blur(14px) saturate(1.2);
-  background: linear-gradient(90deg, rgba(33, 59, 111, 0.95) 0%, rgba(24, 95, 136, 0.95) 55%, rgba(23, 115, 127, 0.95) 100%);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.22), 0 12px 26px rgba(16, 39, 78, 0.34);
+  background: linear-gradient(90deg, rgba(22, 42, 87, 0.95) 0%, rgba(19, 63, 106, 0.95) 55%, rgba(17, 78, 102, 0.95) 100%);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.28), 0 12px 28px rgba(10, 24, 52, 0.42);
 }
 .header-inner {
   width: min(1200px, 100% - 36px);
@@ -225,7 +225,7 @@ body.nav-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) rotat
   gap: 12px;
   opacity: 0;
   pointer-events: none;
-  background: linear-gradient(165deg, rgba(54, 67, 61, 0.94) 0%, rgba(40, 52, 47, 0.96) 100%);
+  background: linear-gradient(165deg, rgba(20, 35, 66, 0.95) 0%, rgba(16, 48, 78, 0.97) 100%);
   backdrop-filter: blur(16px);
   transition: opacity .25s ease;
 }
@@ -1170,7 +1170,7 @@ section:not(#hero) {
 #site-footer {
   position: relative;
   z-index: 10;
-  background: linear-gradient(145deg, #1f3463 0%, #17536d 60%, #14636b 100%);
+  background: linear-gradient(145deg, #172b57 0%, #133f66 60%, #114f63 100%);
   color: rgba(255, 255, 255, 0.82);
   padding: 64px 0 0;
   font-family: var(--font-body);
