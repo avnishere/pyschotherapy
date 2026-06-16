@@ -34,6 +34,9 @@
   --r-xl: 34px;
 
   --header-h: 84px;
+
+  --portrait-face-y: -35%;
+  --portrait-face-zoom: 1.75;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
